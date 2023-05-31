@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
+
 import { BaseData } from '../model/basedata';
-import { Character } from '../model/character';
+import { Character, Result } from '../model/character';
 import { Episode } from '../model/episode';
 import { Location } from '@angular/common';
 
@@ -10,5 +11,6 @@ import { Location } from '@angular/common';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-  @Input() character?:Character
+  @Input() character?:Result
+  @Input() location?:Location
 }
